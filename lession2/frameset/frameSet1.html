@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="huawei"/>
+    <!--//便于被搜索到  seo提高排名-->
+    <meta name="keywords" content="猎头,培训,外包"/>
+    <meta name="Description" content="华为科技是一个不错的公司啊"/>
+    <title>框架集col</title>
+</head>
+
+
+<!--frameset cols="25%,50%,*" 列   rows="50%,*" 行  这两个属性是必须有的 但是不能同时出现 只能出现一个  单位可以为px 也可以为% 屏幕的百分比，*号表示剩余的-->
+<!--border是 边框宽度，frameset是可以嵌套的-->
+<!--frameset里的子项是frame  frame的属性有 src html的地址路径-->
+<!--特别需要注意的是  farmeset与body是相冲的  不能同时使用，除非在frameset中使用了 noframes标签  因为不是说有的浏览器都支持框架集frameset的-->
+
+<frameset cols="25%,50%,*">
+    <frame src="frame1.html">
+    <frame src="frame2.html">
+    <frame src="frame3.html">
+</frameset>
+
+</html>
