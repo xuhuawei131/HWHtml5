@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="huawei"/>
+    <!--//便于被搜索到  seo提高排名-->
+    <meta name="keywords" content="猎头,培训,外包"/>
+    <meta name="Description" content="华为科技是一个不错的公司啊"/>
+    <title>Frameset使用</title>
+    <!--标签中的name一般是 浏览器使用的，而id是提交给服务器使用的-->
+
+</head>
+<frameset rows="30%,*" name="index">
+    <frame id="top" src="TopHtml.html">
+    <frameset cols="30%,*">
+        <!--noresize固定不让滑动了 变化尺寸了-->
+        <frame src="LeftNavi.html" name="leftNavi" noresize="noresize">
+        <frame src="frame1.html" name="rightContent">
+    </frameset>
+
+
+    <!--如果怕浏览器不支持 标签的话 那么就在他的根目录下面 填写支持的标签-->
+    <noframes>
+        <!--noframe中添加的是body-->
+        <body>
+        此浏览器不支持frameset
+        </body>
+    </noframes>
+</frameset>
+</html>
