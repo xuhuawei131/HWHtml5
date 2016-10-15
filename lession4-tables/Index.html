@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="huawei"/>
+    <!--//便于被搜索到  seo提高排名-->
+    <meta name="keywords" content="猎头,培训,外包"/>
+    <meta name="Description" content="华为科技是一个不错的公司啊"/>
+    <title>Table</title>
+</head>
+<body>
+<!--table用于定义表格 一般用于规则的数据显示，但是缺点是 代码量比较大 浏览器执行速度比较慢。而且层次结构比较复杂 不易于改版和维护-->
+<!--caption 用于定义表格的标题  1个或者0个-->
+<!--tbody 定义表格的主题-->
+<!--thread 定义表格头-->
+<!--th 定义单元格页眉的单元格 一般是粗体字 一般是一列的第一个 而且居中-->
+<!--tr是表格行， 该元素只能包含使用 tr和th两种元素-->
+<!--td是单元格 包含两个主要的属性 colspan指定单元格跨多个列，rowspan指定单元格可横跨的行数-->
+<!--tfoot 定义表格脚-->
+
+
+<!--结构分为了三部分 caption 标题  然后是 thead，tbody，tfoot。而caption是标题，在thead中 使用了 th代替td，这样可以加粗居中，
+tbody中 正常使用 tr td，如果有合并单元格 那就在td中写上 colspan或者rowspan-->
+
+<table width="50%,500px" border="1" bgcolor="#33ff55" cellspacing="0" cellpadding="30px" align="center">
+    <caption>我喜欢的歌曲</caption>
+    <thead>
+    <tr>
+        <th>
+            歌曲名
+        </th>
+        <th>
+            作者
+        </th>
+    </tr>
+    </thead>
+
+    <tbody>
+    </tbody>
+    <tr>
+        <td>光辉岁月</td>
+        <td>beyond</td>
+    </tr>
+
+    <tr>
+        <td>红豆</td>
+        <td>王菲</td>
+    </tr>
+    <tr>
+        <td>我只在乎你</td>
+        <td>邓丽君</td>
+    </tr>
+
+    <tr>
+        <td>倩女幽魂</td>
+        <td rowspan="2">张国荣</td>
+    </tr>
+    <tr>
+        <td>有谁共鸣</td>
+    </tr>
+    <tfoot>
+<tr>
+    <td colspan="2" align="center">一共有5首歌曲</td>
+</tr>
+    </tfoot>
+</table>
+
+
+</body>
+</html>
