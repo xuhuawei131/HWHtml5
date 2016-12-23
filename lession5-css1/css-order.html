@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="huawei"/>
+    <!--//便于被搜索到  seo提高排名-->
+    <meta name="keywords" content="猎头,培训,外包"/>
+    <meta name="Description" content="华为科技是一个不错的公司啊"/>
+    <title>样式优先级</title>
+    <style  type="text/css">
+        p{
+            color:green;
+        }
+        @import "waibu-import/css2.css";
+    </style>
+    <link rel="stylesheet" type="text/css" href="waibu-import/css2.css">
+</head>
+<body>
+
+
+<p style="color:#FF0000 ;">优先级顺序为：内联>内部（内嵌）>import>link</p>
+
+</body>
+</html>
