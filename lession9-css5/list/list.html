@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="huawei"/>
+    <!--//便于被搜索到  seo提高排名-->
+    <meta name="keywords" content="猎头,培训,外包"/>
+    <meta name="Description" content="华为科技是一个不错的公司啊"/>
+    <title>字体以及文本属性</title>
+    <style type="text/css">
+        body{
+            background-color: #c1daff;
+        }
+        li{
+            background-color: #aaa;
+        }
+
+        #four{
+            list-style-image: url("icon_win.png");list-style-position: inside;
+        }
+        #five{
+            background: url("icon_win.png") repeat;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<p>使用图标作为无序列表项标记</p>
+<ul style="list-style-image:url(icon_win.png);list-style-position: inside">
+    <li>Road cycling 自行车公路赛</li>
+    <li>Track cycling 自行车场地赛</li>
+    <li>sprint 追组赛</li>
+</ul>
+
+<p>使用数字作为列表项标记，并将列表项标记放在列表元素内</p>
+<ol style="list-style-type:decimal;list-style-position: inside">
+    <li>java技术</li>
+    <li>android技术</li>
+    <li>c技术</li>
+</ol>
+
+
+<p>list-style-type 与list-style-image 不可同时使用</p>
+<ul id="four">
+    <li>足球</li>
+    <li>篮球</li>
+    <li>网球</li>
+</ul>
+
+<ul id="five">
+    <li>乒乓球</li>
+    <li>溜溜球</li>
+    <li>地球</li>
+</ul>
+
+</body>
+</html>
